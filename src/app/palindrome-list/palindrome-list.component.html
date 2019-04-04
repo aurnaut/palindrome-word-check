@@ -1,0 +1,11 @@
+<div class="container">
+  <ul>
+    <li *ngFor="let palindrome of palindromes">
+      <span class="palindrome-name">{{ palindrome.name + " - " }}</span>
+      {{ palindrome.length + " letters" }}
+      <span class="{{ palindrome.isPalindrome ? 'green' : 'red' }}">{{
+        palindrome.isPalindrome ? " - palindrome" : "- not a palindrome "
+      }}</span>
+    </li>
+  </ul>
+</div>

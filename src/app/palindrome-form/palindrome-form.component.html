@@ -1,0 +1,19 @@
+<div class="container">
+  <form
+    ngNativeValidate
+    (ngSubmit)="onAddPalindrome(palindromeForm)"
+    #palindromeForm="ngForm"
+  >
+    <input
+      required
+      type="text"
+      id="name"
+      name="palindrome"
+      class="form-control"
+      placeholder="Type a word..."
+      #palindromeInput
+      ngModel
+    />
+    <button type="submit">Check Palindrome</button>
+  </form>
+</div>
